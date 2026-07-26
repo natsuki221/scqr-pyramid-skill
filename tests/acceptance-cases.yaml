@@ -1,0 +1,40 @@
+version: 1
+cases:
+  - id: presentation-outline
+    prompt: "Turn rough notes into a 7-slide outline for an advisor decision."
+    must_include:
+      - Resolution
+      - Situation
+      - Complication
+      - Question
+      - Pyramid
+      - Vertical
+      - Horizontal
+      - next actions
+    must_not:
+      - invented evidence
+
+  - id: proposal
+    prompt: "Compare two implementation options and ask for approval."
+    must_include:
+      - decision ask
+      - options
+      - criteria
+      - evidence
+      - risks
+      - completion condition
+    must_not:
+      - mixed-level peer buckets
+
+  - id: research-idea
+    prompt: "Turn a research gap into a thesis idea without overstating evidence."
+    must_include:
+      - provisional thesis claim
+      - hypothesis
+      - baseline
+      - evaluation boundary
+      - unknowns
+    must_not:
+      - planned study described as completed
+      - offline proxy described as a human study
+
