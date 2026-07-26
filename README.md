@@ -1,93 +1,77 @@
-# SCQR + Pyramid Skill
+# SCQR＋金字塔 Skill（繁體中文版）
 
-A reusable, cross-agent reasoning skill for turning an unclear idea into a
-decision-ready brief, proposal, presentation outline, or research direction.
+一套可跨 AI 代理重複使用的思考技能，協助你將模糊想法整理成可供決策的簡報大綱、提案、決策備忘錄、研究方向或論文章節。
 
-The skill combines:
+本技能整合：
 
-- **SCR / SCQR** — Situation, Complication, Question, Resolution.
-- **Pyramid Principle** — lead with the answer, then support it with grouped
-  reasons and evidence.
-- **MECE** — make peer-level buckets non-overlapping and collectively complete
-  enough for the decision at hand.
-- **Vertical and horizontal logic checks** — verify support within a branch and
-  comparability across branches.
-- **Six-step problem solving** — define, decompose, prioritize, plan, analyze,
-  synthesize.
+- **SCR／SCQR**：情境（Situation）、複雜情況（Complication）、問題（Question）、解決方案（Resolution）。
+- **金字塔原理（Pyramid Principle）**：先講答案，再用分組論點與證據支持。
+- **MECE**：同層分類互不重疊，並在決策範圍內涵蓋重要面向。
+- **垂直與水平邏輯檢查**：驗證證據是否支持上層論點，以及同層論點是否可比較。
+- **六步驟問題解決**：定義、拆解、排序、規劃、分析、綜合。
 
-This is a thinking and communication aid, not a claim that McKinsey endorses
-this exact package. The framework was distilled from the user-provided video
-subtitle/conversation context and is intentionally adapted for AI-assisted
-briefing, proposals, and academic ideation.
+這是一套思考與溝通工具，不代表 McKinsey 對本套件的認可。本版本根據使用者提供的影片字幕與對話內容蒸餾，並針對 AI 輔助簡報、提案與學術發想調整。
 
-## Quick start
+## 快速開始
 
-Give an agent a task and ask it to use the shared skill:
+將任務交給 AI，並要求它使用此技能：
 
 ```text
-Use the SCQR + Pyramid Skill from this repository.
-Task: turn my rough idea into a 7-slide presentation outline.
-Audience: my thesis advisor.
-Decision or action needed: approve the next experiment.
-Evidence available: [paste notes, data, or citations].
-Constraints: 10 minutes, Traditional Chinese, do not invent evidence.
+請使用此 repository 的 SCQR＋金字塔 Skill。
+任務：將我的零散筆記整理成 7 頁簡報大綱。
+受眾：論文指導教授。
+需要的決策或行動：同意下一個實驗。
+現有證據：[貼上筆記、數據或引用來源]
+限制：10 分鐘、繁體中文、不可虛構證據。
 ```
 
-The agent should return, in order:
+AI 應依序輸出：
 
-1. A one-sentence Resolution.
-2. An SCQR opening.
-3. A pyramid of 2–4 mutually comparable support branches.
-4. Evidence mapped to each branch, with unknowns marked `?` or `待確認`.
-5. A vertical/horizontal logic audit.
-6. Risks, assumptions, and next actions.
+1. 一句話的解決方案／核心主張。
+2. SCQR 開場。
+3. 由 2～4 個可比較分支組成的金字塔。
+4. 每個分支對應的證據；未知項目標示為 `?` 或 `待確認`。
+5. 垂直與水平邏輯稽核。
+6. 風險、假設與下一步行動。
 
-## Supported agents
+## 支援的 AI 代理
 
-The repository keeps one shared core and thin adapters:
+本 repository 採用一份共用核心與三個薄型適配檔：
 
-| Agent | Adapter | Typical discovery |
+| 代理 | 適配檔 | 一般載入方式 |
 |---|---|---|
-| Codex | `.agents/skills/scqr-pyramid/SKILL.md` | Project skill discovery or explicit path |
-| Claude Code | `CLAUDE.md` | Project instructions loaded by Claude Code |
-| Gemini / Antigravity | `GEMINI.md` | Project instructions loaded by Gemini tooling |
+| Codex | `.agents/skills/scqr-pyramid/SKILL.md` | 專案 Skill 探索或明確指定路徑 |
+| Claude Code | `CLAUDE.md` | Claude Code 專案指令 |
+| Gemini／Antigravity | `GEMINI.md` | Gemini 專案指令 |
 
-See [`agents/README.md`](agents/README.md) for invocation examples and the
-boundary between shared rules and agent-specific behavior.
+各代理的呼叫方式請參閱 [`agents/README.md`](agents/README.md)。
 
-## Repository map
+## Repository 結構
 
 ```text
 .
-├── .agents/skills/scqr-pyramid/SKILL.md  # Codex-facing adapter
-├── agents/README.md                      # Cross-agent setup and usage
-├── core/SCQR_PYRAMID.md                  # Shared operating specification
-├── CLAUDE.md                             # Claude Code adapter
-├── GEMINI.md                             # Gemini / Antigravity adapter
-├── docs/decision-rubric.md               # Quality rubric and anti-patterns
-├── templates/                            # Reusable output shapes
-├── examples/                             # Worked examples
-├── tests/                                # Acceptance cases and validator
+├── .agents/skills/scqr-pyramid/SKILL.md  # Codex 適配檔
+├── agents/README.md                      # 跨代理設定與使用方式
+├── core/SCQR_PYRAMID.md                  # 共用核心規格
+├── CLAUDE.md                             # Claude Code 適配檔
+├── GEMINI.md                             # Gemini／Antigravity 適配檔
+├── docs/decision-rubric.md               # 品質評分與反模式
+├── templates/                            # 可重複使用的輸出模板
+├── examples/                             # 完整範例
+├── tests/                                # 驗收案例與驗證器
 ├── LICENSE                               # MIT
 └── README.md
 ```
 
-## Design principles
+## 設計原則
 
-- **Conclusion before exposition.** Do not bury the proposed answer beneath a
-  long chronology.
-- **Evidence before confidence.** Separate observed facts, inferences,
-  assumptions, and proposals.
-- **One dimension per peer group.** Do not mix cost, a technology, and a user
-  complaint as if they were parallel categories.
-- **MECE is decision-relative.** Complete means no material decision gap, not
-  that every possible detail is listed.
-- **Retrieval is not reranking.** When discussing technical systems, preserve
-  distinctions such as field, method, metric, baseline, and resource cost.
-- **Academic restraint.** Treat a hypothesis, offline proxy, or proposed study
-  as such; never upgrade it into completed evidence.
+- **結論先於鋪陳**：不要將建議埋在冗長時間線或實作細節後面。
+- **證據先於信心**：分開標示已知事實、推論、假設與提案。
+- **同層只用一種分類維度**：不要把成本、技術名稱與使用者抱怨當成平行類別。
+- **MECE 與決策範圍相依**：「完整」是沒有重大決策缺口，不是列出所有細節。
+- **檢索與重新排序不同**：討論技術系統時，分開處理欄位、方法、指標、基線與資源成本。
+- **維持學術克制**：假設、離線代理指標與規劃中的研究，不得描述成已完成的證據。
 
-## License
+## 授權
 
-MIT. See [`LICENSE`](LICENSE).
-
+採用 MIT License，詳見 [`LICENSE`](LICENSE)。

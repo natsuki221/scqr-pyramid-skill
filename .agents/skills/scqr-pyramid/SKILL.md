@@ -1,21 +1,16 @@
 ---
 name: scqr-pyramid
-description: Build decision-ready briefs, proposals, presentation outlines, and research ideas with SCQR, SCR, the Pyramid Principle, MECE, logic audits, and six-step problem solving.
+description: 使用 SCR、SCQR、金字塔原理、MECE、邏輯稽核與六步驟問題解決，建立可供決策的簡報大綱、提案、備忘錄與研究發想。
 ---
 
-# SCQR + Pyramid Skill
+# SCQR＋金字塔 Skill
 
-Read [`../../../../core/SCQR_PYRAMID.md`](../../../../core/SCQR_PYRAMID.md) and
-follow it as the shared operating contract. For the requested artifact, use
-the closest template in [`../../../../templates/`](../../../../templates/).
+請先閱讀 [`../../../../core/SCQR_PYRAMID.md`](../../../../core/SCQR_PYRAMID.md)，並將其作為共用操作規範。依任務需求選用 [`../../../../templates/`](../../../../templates/) 中最接近的模板。
 
-Always ask or infer from the task:
+開始前應從使用者資訊中確認或合理判斷：
 
-- audience and desired decision/action;
-- evidence boundary and what is still unknown;
-- artifact type, length, language, and constraints.
+- 受眾與期望的決策／行動；
+- 證據邊界及尚未確認的項目；
+- 產出類型、篇幅、語言與限制。
 
-Return the Resolution first, then SCQR, pyramid branches, evidence map, logic
-audit, and next actions. Never invent citations, results, participants, or
-implementation status.
-
+輸出順序固定為：核心主張、SCQR、金字塔分支、證據對照、邏輯稽核、下一步行動。不得虛構引用來源、結果、參與者或實作狀態。

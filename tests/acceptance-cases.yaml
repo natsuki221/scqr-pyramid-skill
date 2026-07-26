@@ -1,40 +1,40 @@
 version: 1
+language: zh-TW
 cases:
   - id: presentation-outline
-    prompt: "Turn rough notes into a 7-slide outline for an advisor decision."
+    prompt: "將零散筆記整理成供指導教授決策的 7 頁繁體中文簡報大綱。"
     must_include:
-      - Resolution
-      - Situation
-      - Complication
-      - Question
-      - Pyramid
-      - Vertical
-      - Horizontal
-      - next actions
+      - 解決方案
+      - 情境
+      - 複雜情況
+      - 問題
+      - 金字塔
+      - 垂直邏輯
+      - 水平邏輯
+      - 下一步
     must_not:
-      - invented evidence
+      - 虛構證據
 
   - id: proposal
-    prompt: "Compare two implementation options and ask for approval."
+    prompt: "比較兩個實作方案，並以繁體中文提出核准請求。"
     must_include:
-      - decision ask
-      - options
-      - criteria
-      - evidence
-      - risks
-      - completion condition
+      - 決策請求
+      - 方案
+      - 評估準則
+      - 證據
+      - 風險
+      - 完成條件
     must_not:
-      - mixed-level peer buckets
+      - 層級混雜的同層分類
 
   - id: research-idea
-    prompt: "Turn a research gap into a thesis idea without overstating evidence."
+    prompt: "將研究缺口轉化為論文發想，不得誇大證據。"
     must_include:
-      - provisional thesis claim
-      - hypothesis
-      - baseline
-      - evaluation boundary
-      - unknowns
+      - 暫定論文主張
+      - 假設
+      - 基準
+      - 評估邊界
+      - 待確認
     must_not:
-      - planned study described as completed
-      - offline proxy described as a human study
-
+      - 把規劃中的研究說成已完成
+      - 把離線代理指標說成人類研究

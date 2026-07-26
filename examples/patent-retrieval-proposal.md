@@ -1,49 +1,38 @@
-# Example: patent retrieval proposal
+# 範例：專利檢索提案
 
-## Resolution
+## 解決方案
 
-> Pilot claim-element decomposition for long independent claims, then compare
-> it against whole-claim retrieval under a fixed run contract before expanding
-> to human evaluation.
+> 先針對長篇獨立項試行請求項要素分解，依固定的實驗契約與整項檢索比較，再決定是否擴展至人類評估。
 
 ## SCQR
 
-- **Situation**: The current system retrieves patent text using dense vectors
-  and compares ranked candidates.
-- **Complication**: Long claims contain multiple technical limitations, so a
-  whole-claim representation may dilute element-level matches; the current
-  evidence does not yet establish a causal improvement.
-- **Question**: Which controlled change should be tested first, and how should
-  quality and resource cost be reported together?
-- **Resolution**: Start with a bounded claim-element pilot and preserve a
-  whole-claim control.
+- **Situation（情境）**：目前系統使用稠密向量檢索專利文字，並比較排序後的候選結果。
+- **Complication（複雜情況）**：長篇請求項包含多個技術限制，整項表徵可能稀釋要素層級的匹配；現有證據尚未證明這項改動會帶來因果改善。
+- **Question（問題）**：應優先測試哪一項可控制的改動？如何同時報告品質與資源成本？
+- **Resolution（解決方案）**：先進行範圍明確的請求項要素試驗，並保留整項檢索作為控制組。
 
-## Pyramid
+## 金字塔
 
-### 1. Relevance mechanism
+### 1. 相關性機制
 
-- Claim: element-level matching may reduce semantic dilution in long claims.
-- Evidence: `待確認` — requires an ablation by claim length and element type.
-- Limitation: improvement may depend on decomposition quality.
+- 主張：要素層級匹配可能降低長篇請求項的語意稀釋。
+- 證據：`待確認`——需要依請求項長度與要素類型進行消融實驗。
+- 限制：改善幅度可能取決於要素分解品質。
 
-### 2. Causal experiment design
+### 2. 因果實驗設計
 
-- Claim: a fixed candidate set and one major factor per row make the comparison
-  interpretable.
-- Evidence: experiment design principle, not a measured result.
-- Limitation: the pilot does not prove general superiority.
+- 主張：固定候選集合，且每個實驗列只改變一個主要因素，可提高比較的可解釋性。
+- 證據：這是實驗設計原則，不是已測得的結果。
+- 限制：試驗結果不能證明全面優越性。
 
-### 3. Evaluation boundary
+### 3. 評估邊界
 
-- Claim: offline IR metrics and failure analysis are Stage 1 evidence; a real
-  expert study requires participants, tasks, protocol, and agreement reporting.
-- Evidence: protocol requirement; participant evidence is not present here.
-- Limitation: offline gains may not translate to user value.
+- 主張：離線資訊檢索指標與失敗分析屬於第一階段證據；真正的專家研究仍需參與者、任務、協定與一致性報告。
+- 證據：目前只有協定需求，尚無參與者證據。
+- 限制：離線改善不一定能轉化為使用者價值。
 
-## Logic audit
+## 邏輯稽核
 
-- Vertical: **partial** — the mechanism is plausible but awaits data.
-- Horizontal: **pass** — mechanism, causal design, and evaluation boundary are
-  distinct dimensions.
-- Overclaim blocked: “全面優於既有方法” is not allowed yet.
-
+- 垂直邏輯：**部分通過**——機制合理，但仍待數據驗證。
+- 水平邏輯：**通過**——機制、因果設計與評估邊界是彼此獨立的面向。
+- 已阻擋的過度主張：目前不得聲稱「全面優於既有方法」。

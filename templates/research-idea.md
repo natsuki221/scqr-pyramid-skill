@@ -1,60 +1,59 @@
-# Research idea / thesis section template
+# 研究發想／論文章節模板
 
 ```yaml
-audience: "advisor | committee | reader"
+audience: "指導教授 | 口試委員 | 讀者"
 artifact: paper-idea
 research_area: ""
 evidence_boundary: ""
+language: "繁體中文"
 ```
 
-## Resolution / provisional thesis claim
+## 解決方案／暫定論文主張
 
-> This project should investigate ___ because ___; the claim is provisional
-> until ___.
+> 本研究應探討＿＿，因為＿＿；在完成＿＿之前，此主張仍屬暫定。
 
 ## SCQR
 
-- **Situation**: what the field or system currently does.
-- **Complication**: the limitation, contradiction, or gap.
-- **Question**: the answerable research question.
-- **Resolution**: proposed contribution, with confidence boundary.
+- **Situation（情境）**：該領域或系統目前的做法。
+- **Complication（複雜情況）**：限制、矛盾或研究缺口。
+- **Question（問題）**：可被回答的研究問題。
+- **Resolution（解決方案）**：擬議貢獻，並說明信心與證據邊界。
 
-## Pyramid
+## 金字塔
 
-### 1. Problem significance
+### 1. 問題重要性
 
-- claim:
-- evidence / citation slots:
-- limitation:
+- 主張：
+- 證據／引用預留位置：
+- 限制：
 
-### 2. Proposed mechanism
+### 2. 擬議機制
 
-- hypothesis:
-- method:
-- comparison / baseline:
-- not yet known:
+- 假設：
+- 方法：
+- 比較方案／基準：
+- 尚未知：
 
-### 3. Evaluation and validity
+### 3. 評估與效度
 
-- Stage 1 offline proxy:
-- Stage 2 human / expert evaluation (if applicable):
-- metrics:
-- failure analysis:
-- resource cost:
+- 第一階段離線代理證據：
+- 第二階段人類／專家評估（若適用）：
+- 指標：
+- 失敗分析：
+- 資源成本：
 
-## Six-step plan
+## 六步驟計畫
 
-1. Define the problem and success criteria.
-2. Decompose the causal or methodological factors.
-3. Prioritize the highest-impact controllable factor.
-4. Specify data, baseline, method, and evaluation protocol.
-5. Analyze quality, failure cases, and resource trade-offs.
-6. Synthesize a qualified claim and next experiment.
+1. 定義問題與成功標準。
+2. 拆解因果或方法因素。
+3. 優先處理影響最大且可控制的因素。
+4. 明確指定資料、基準、方法與評估協定。
+5. 分析品質、失敗案例與資源取捨。
+6. 綜合出有限定條件的主張，並提出下一個實驗。
 
-## Logic audit
+## 邏輯稽核
 
-- Vertical:
-- Horizontal:
-- Claims that remain hypotheses:
-- Claims that must not be made yet:
-
+- 垂直邏輯：
+- 水平邏輯：
+- 仍屬假設的主張：
+- 目前不得提出的主張：

@@ -1,4 +1,4 @@
-# Proposal template
+# 提案模板
 
 ```yaml
 audience: ""
@@ -6,47 +6,47 @@ artifact: proposal
 decision_or_action: ""
 scope: ""
 constraints: ""
+language: "繁體中文"
 ```
 
-## Executive Resolution
+## 執行摘要：解決方案
 
-> Recommend ___ now, subject to ___, because ___ and ___.
+> 建議現在採取＿＿，但須符合＿＿條件，因為＿＿與＿＿。
 
 ## SCQR
 
-| Element | Draft |
+| 元素 | 草稿 |
 |---|---|
-| Situation | |
-| Complication | |
-| Question | |
-| Resolution | |
+| Situation（情境） | |
+| Complication（複雜情況） | |
+| Question（問題） | |
+| Resolution（解決方案） | |
 
-## Pyramid of support
+## 支持論點金字塔
 
-| Branch | Claim | Evidence | Implication | Limitation |
+| 分支 | 主張 | 證據 | 意義 | 限制 |
 |---|---|---|---|---|
 | A | | | | |
 | B | | | | |
 | C | | | | |
 
-## Options and criteria
+## 方案與評估準則
 
-| Option | Value | Feasibility | Cost / resource | Risk | Recommendation |
+| 方案 | 價值 | 可行性 | 成本／資源 | 風險 | 建議 |
 |---|---|---|---|---|---|
 | 1 | | | | | |
 | 2 | | | | | |
 
-## Work plan
+## 工作計畫
 
-| Priority | Owner | Input | Output | Completion condition | Risk |
+| 優先級 | 負責人 | 輸入 | 產出 | 完成條件 | 風險 |
 |---|---|---|---|---|---|
 | P0 | | | | | |
 | P1 | | | | | |
 
-## Audit and decision ask
+## 稽核與決策請求
 
-- Vertical logic:
-- Horizontal logic:
-- Unknowns / `待確認`:
-- Decision requested:
-
+- 垂直邏輯：
+- 水平邏輯：
+- 未知項目／`待確認`：
+- 請求的決策：

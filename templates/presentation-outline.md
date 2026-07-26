@@ -1,4 +1,4 @@
-# Presentation outline template
+# 簡報大綱模板
 
 ```yaml
 audience: ""
@@ -6,70 +6,69 @@ artifact: slides
 duration: ""
 decision_or_action: ""
 evidence_boundary: ""
-language: ""
+language: "繁體中文"
 ```
 
-## Resolution
+## 解決方案／核心主張
 
-> We should / this study argues that ___ because ___, within ___ scope.
+> 在＿＿範圍內，我們應該／本研究主張＿＿，因為＿＿。
 
-## Opening: SCQR
+## 開場：SCQR
 
-- **Situation**: 
-- **Complication**: 
-- **Question**: 
-- **Resolution**: 
+- **Situation（情境）**：
+- **Complication（複雜情況）**：
+- **Question（問題）**：
+- **Resolution（解決方案）**：
 
-## Pyramid slide map
+## 金字塔投影片配置
 
-### Slide 1 — Resolution
+### 投影片 1 — 解決方案
 
-- title:
-- one-sentence takeaway:
-- decision ask:
+- 標題：
+- 一句話重點：
+- 希望聽眾做出的決策：
 
-### Slide 2 — Situation and Complication
+### 投影片 2 — 情境與複雜情況
 
-- shared context:
-- change or gap:
-- evidence:
+- 共同背景：
+- 變化或差距：
+- 證據：
 
-### Slide 3 — Branch A
+### 投影片 3 — 分支 A
 
-- claim:
-- evidence:
-- implication:
-- limitation:
+- 主張：
+- 證據：
+- 意義：
+- 限制：
 
-### Slide 4 — Branch B
+### 投影片 4 — 分支 B
 
-- claim:
-- evidence:
-- implication:
-- limitation:
+- 主張：
+- 證據：
+- 意義：
+- 限制：
 
-### Slide 5 — Branch C (if material)
+### 投影片 5 — 分支 C（若確有必要）
 
-- claim:
-- evidence:
-- implication:
-- limitation:
+- 主張：
+- 證據：
+- 意義：
+- 限制：
 
-### Slide 6 — Risks and trade-offs
+### 投影片 6 — 風險與取捨
 
-- risk:
-- mitigation:
-- open question:
+- 風險：
+- 緩解方式：
+- 待解問題：
 
-### Slide 7 — Recommendation and next actions
+### 投影片 7 — 建議與下一步
 
-- recommendation:
-- action 1 / completion condition:
-- action 2 / completion condition:
+- 建議：
+- 行動 1／完成條件：
+- 行動 2／完成條件：
 
-## Logic audit
+## 邏輯稽核
 
-- Vertical:
-- Horizontal:
-- Missing evidence:
-
+- 垂直邏輯：
+- 水平邏輯：
+- 缺少的證據：

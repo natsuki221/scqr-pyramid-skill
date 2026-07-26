@@ -1,35 +1,24 @@
-# Example: thesis ideation brief
+# 範例：論文發想摘要
 
-## Resolution
+## 解決方案
 
-> Frame the thesis as a two-stage evaluation of field-aware patent retrieval:
-> first test controlled offline retrieval changes, then test whether experts can
-> interpret and use the results in a realistic task.
+> 將論文定位為欄位感知專利檢索的兩階段評估：先以受控制的離線實驗測試檢索改動，再檢驗專家能否在真實任務中理解並使用結果。
 
 ## SCQR
 
-- **Situation**: Patent retrieval can be evaluated with ranked relevance and
-  system resource measures.
-- **Complication**: Offline metrics alone do not establish that experts can
-  understand, trust, or act on the results.
-- **Question**: How can the architecture and evaluation keep retrieval quality,
-  resource cost, and human usefulness distinguishable?
-- **Resolution**: Use separate Stage 1 and Stage 2 protocols with explicit
-  evidence gates.
+- **Situation（情境）**：專利檢索可透過排序相關性與系統資源指標評估。
+- **Complication（複雜情況）**：僅靠離線指標，無法證明專家能理解、信任或採用結果。
+- **Question（問題）**：架構與評估應如何設計，才能清楚區分檢索品質、資源成本與人類可用性？
+- **Resolution（解決方案）**：採用彼此分離的第一階段與第二階段協定，並設定明確的證據門檻。
 
-## Pyramid
+## 金字塔
 
-1. **Architecture** — separate retriever, reranker, fields, claims granularity,
-   and result presentation.
-2. **Stage 1** — fixed baselines, controlled ablations, IR metrics, resource
-   reporting, and error analysis.
-3. **Stage 2** — candidate construction, expert labels, agreement, task timing,
-   questionnaire, and realism validation.
+1. **架構**——分開控制檢索器、重排序器、欄位、請求項粒度與結果呈現。
+2. **第一階段**——固定基準、受控制的消融實驗、資訊檢索指標、資源報告與錯誤分析。
+3. **第二階段**——候選集合建立、專家標註、一致性、任務時間、問卷與情境真實性驗證。
 
-## Open questions
+## 待解問題
 
-- Encoder, ANN configuration, relevance definition, and resource ceiling:
-  `待確認`.
-- Independent reranker versus same-model rescoring: must remain distinct.
-- Participant protocol and sample: `待確認`.
-
+- 編碼器、近似最近鄰設定、相關性定義與資源上限：`待確認`。
+- 獨立重排序器與同模型重新評分：必須分開處理。
+- 參與者協定與樣本：`待確認`。

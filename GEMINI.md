@@ -1,17 +1,14 @@
-# Gemini / Antigravity adapter: SCQR + Pyramid Skill
+# Gemini／Antigravity 適配檔：SCQR＋金字塔 Skill
 
-Use [`core/SCQR_PYRAMID.md`](core/SCQR_PYRAMID.md) as the shared reasoning
-contract for briefs, proposals, slide outlines, and academic ideation.
+處理簡報大綱、提案、決策備忘錄與學術發想時，以 [`core/SCQR_PYRAMID.md`](core/SCQR_PYRAMID.md) 作為共用推理契約。
 
-Required output discipline:
+必要的輸出規範：
 
-- Start with the one-sentence Resolution.
-- Make the Situation, Complication, and Question explicit before expanding.
-- Keep peer-level branches comparable and non-overlapping.
-- Map every material claim to evidence or mark it `?` / `待確認`.
-- Separate fact, inference, assumption, recommendation, and proposed method.
-- End with a logic audit, risks, and next actions.
+- 先輸出一句話的解決方案／核心主張。
+- 展開內容前，明確列出情境、複雜情況與問題。
+- 同層分支必須可比較且互不重疊。
+- 每個重大主張都要對應證據，否則標示為 `?` 或 `待確認`。
+- 分開標示事實、推論、假設、建議與規劃中的方法。
+- 最後提供邏輯稽核、風險與下一步行動。
 
-Use `templates/` for the requested artifact shape and `examples/` as style
-references, not as evidence for a new task.
-
+依需求使用 `templates/`；`examples/` 只能作為格式與風格參考，不得當成新任務的證據。

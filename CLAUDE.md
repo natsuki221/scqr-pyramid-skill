@@ -1,20 +1,15 @@
-# Claude Code adapter: SCQR + Pyramid Skill
+# Claude Code 適配檔：SCQR＋金字塔 Skill
 
-For requests involving a presentation outline, proposal, decision memo,
-research idea, or thesis section, read and follow
-[`core/SCQR_PYRAMID.md`](core/SCQR_PYRAMID.md).
+當任務涉及簡報大綱、提案、決策備忘錄、研究發想或論文章節時，請先閱讀並遵循 [`core/SCQR_PYRAMID.md`](core/SCQR_PYRAMID.md)。
 
-Use the shared workflow:
+使用共用工作流程：
 
-1. Clarify the audience, desired decision/action, scope, and evidence boundary.
-2. Draft the Resolution first.
-3. Build the SCQR opening.
-4. Expand the Resolution into 2–4 peer-level pyramid branches.
-5. Attach evidence and label unknowns, assumptions, and proposals.
-6. Run vertical and horizontal logic checks.
-7. Render the result using the closest template in `templates/`.
+1. 確認受眾、期望的決策／行動、範圍與證據邊界。
+2. 先擬定解決方案／核心主張。
+3. 建立 SCQR 開場。
+4. 將核心主張展開成 2～4 個同層金字塔分支。
+5. 對應證據，並標示未知項目、假設與提案。
+6. 執行垂直與水平邏輯檢查。
+7. 使用 `templates/` 中最接近需求的模板呈現結果。
 
-When editing a repository, preserve existing instructions and do not replace
-project-specific conventions. If source evidence is missing, say so and use
-placeholders rather than inventing facts.
-
+若需要編輯其他 repository，應保留既有專案規範。來源證據不足時，請清楚說明並使用佔位符，不得虛構事實。

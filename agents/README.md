@@ -1,47 +1,39 @@
-# Agent adapters
+# AI 代理適配說明
 
-The adapters are deliberately thin. The framework lives in one place:
-[`../core/SCQR_PYRAMID.md`](../core/SCQR_PYRAMID.md). This prevents Codex,
-Claude Code, and Gemini / Antigravity from drifting into three incompatible
-versions of the method.
+適配檔刻意維持精簡。完整框架只有一份，位於 [`../core/SCQR_PYRAMID.md`](../core/SCQR_PYRAMID.md)，避免 Codex、Claude Code 與 Gemini／Antigravity 各自演變成不相容版本。
 
 ## Codex
 
-The discoverable adapter is
-[`../.agents/skills/scqr-pyramid/SKILL.md`](../.agents/skills/scqr-pyramid/SKILL.md).
-From a project that has this repository available, ask:
+可探索的適配檔位於 [`../.agents/skills/scqr-pyramid/SKILL.md`](../.agents/skills/scqr-pyramid/SKILL.md)。
 
 ```text
-Use the scqr-pyramid skill to turn these notes into a decision-ready proposal.
+請使用 scqr-pyramid skill，將以下筆記整理成可供決策的提案。
 ```
 
 ## Claude Code
 
-`CLAUDE.md` points Claude Code to the core contract. A direct invocation is:
+`CLAUDE.md` 會將 Claude Code 導向共用核心：
 
 ```text
-Follow the SCQR + Pyramid Skill in this repository and produce a thesis idea
-brief from the notes below.
+請遵循此 repository 的 SCQR＋金字塔 Skill，
+將下列資料整理成論文發想簡報。
 ```
 
-## Gemini / Antigravity
+## Gemini／Antigravity
 
-`GEMINI.md` provides the project-level adapter. A direct invocation is:
+`GEMINI.md` 提供專案層級適配：
 
 ```text
-Apply the SCQR + Pyramid Skill. Return the Resolution, SCQR opening, pyramid,
-evidence map, logic audit, and next actions.
+請套用 SCQR＋金字塔 Skill，依序輸出核心主張、SCQR、
+金字塔、證據對照、邏輯稽核與下一步行動。
 ```
 
-## Suggested context envelope
-
-For consistent results, include:
+## 建議提供的任務資訊
 
 ```yaml
-audience: "who will read or hear this"
+audience: "閱讀或聆聽此內容的人"
 artifact: "slides | proposal | memo | paper-idea | chapter-section"
-decision_or_action: "what should happen after reading"
-evidence: "notes, data, citations, or unknown"
-constraints: "time, length, language, resources"
+decision_or_action: "閱讀後應做出的決策或行動"
+evidence: "筆記、數據、引用來源或未知"
+constraints: "時間、篇幅、語言、資源限制"
 ```
-

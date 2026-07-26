@@ -1,175 +1,157 @@
-# Shared operating specification
+# 共用操作規格
 
-## 1. Core contract
+## 1. 核心契約
 
-The skill turns messy material into a decision-ready artifact:
-
-```text
-define the decision → write the Resolution → frame SCQR → build the pyramid
-→ attach evidence → audit logic → recommend next actions
-```
-
-Use the minimum structure that supports the decision. Do not force every
-output to have exactly three branches.
-
-## 2. The frameworks
-
-### SCR: compact communication
-
-- **Situation**: the relevant shared context.
-- **Complication**: the change, obstacle, risk, or gap.
-- **Resolution**: the proposed answer or action.
-
-Use SCR for a short status update, email, meeting intervention, or executive
-summary. The listener should understand the issue and requested action quickly.
-
-### SCQR: opening a full argument
-
-- **Situation** establishes the common ground.
-- **Complication** creates the tension or meaningful gap.
-- **Question** states the decision or research question created by that gap.
-- **Resolution** gives the answer, recommendation, or thesis claim.
-
-SCQR is the opening frame. The Resolution must also serve as the top of the
-pyramid, so the body proves or qualifies it rather than restarting the story.
-
-### Pyramid Principle
-
-Organize claims from top to bottom:
+本技能將零散資訊轉化成可供決策的產出：
 
 ```text
-Resolution
-├── Branch A: reason / finding / workstream
-│   └── evidence, example, implication
-├── Branch B: reason / finding / workstream
-│   └── evidence, example, implication
-└── Branch C: reason / finding / workstream
-    └── evidence, example, implication
+定義決策 → 先寫核心主張 → 建立 SCQR → 展開金字塔
+→ 對應證據 → 稽核邏輯 → 提出下一步
 ```
 
-Every item at a lower level must answer: “Which claim above does this support?”
-If it supports none, remove it, move it, or label it as context.
+只使用足以支持該決策的最小結構，不要強迫所有產出恰好包含三個分支。
+
+## 2. 框架
+
+### SCR：精簡溝通
+
+- **Situation（情境）**：與決策相關、雙方已知的背景。
+- **Complication（複雜情況）**：變化、障礙、風險或差距。
+- **Resolution（解決方案）**：建議採取的行動或答案。
+
+SCR 適合進度回報、Email、會議發言與執行摘要。聽眾應能快速理解問題與你希望他採取的行動。
+
+### SCQR：完整論證的開場
+
+- **Situation** 建立共同背景。
+- **Complication** 建立必須處理的張力或差距。
+- **Question** 提出該差距所產生的決策或研究問題。
+- **Resolution** 回答問題，提出建議或論文主張。
+
+SCQR 負責開場；Resolution 同時必須成為金字塔最上層。主體應證明或限定這個答案，而不是重新敘述另一個故事。
+
+### 金字塔原理（Pyramid Principle）
+
+由上而下組織主張：
+
+```text
+核心主張／解決方案
+├── 分支 A：理由／發現／工作流
+│   └── 證據、案例、含義、限制
+├── 分支 B：理由／發現／工作流
+│   └── 證據、案例、含義、限制
+└── 分支 C：理由／發現／工作流
+    └── 證據、案例、含義、限制
+```
+
+每個下層項目都必須回答：「這份證據支持哪一個上層主張？」若無法回答，應刪除、移動或標示為背景。
 
 ### MECE
 
-MECE is a quality check on a peer group:
+MECE 是同層項目的品質檢查：
 
-- **Mutually exclusive**: avoid double-counting the same cause, claim, or task.
-- **Collectively exhaustive**: cover the material dimensions needed for the
-  decision, while preserving a deliberate scope boundary.
+- **Mutually Exclusive（相互獨立）**：不要重複計算同一原因、主張或任務。
+- **Collectively Exhaustive（整體完整）**：在明確範圍內涵蓋決策所需的重要面向。
 
-Do not treat “complete” as “include everything.” Prefer a named dimension such
-as feasibility, value, and risk over a mixed list such as cost, Python, and user
-dissatisfaction.
+「完整」不等於「列出所有事情」。應使用價值、可行性與風險等一致維度，而不是把成本、Python 與使用者不滿混在同一層。
 
-### Vertical logic
+### 垂直邏輯
 
-Check support up and down the tree:
+檢查金字塔上下層的支持關係：
 
 ```text
-evidence → branch → Resolution
+證據 → 分支主張 → 核心主張
 ```
 
-Ask whether the evidence actually establishes the branch and whether the
-branches jointly support the Resolution. A popular tool, a high benchmark in a
-different language, or an attractive anecdote may be relevant context without
-being evidence for the stated claim.
+確認證據是否真的建立分支主張，以及各分支能否共同支持核心主張。熱門工具、不同語言的高 Benchmark 或有趣案例可能只是背景，未必能證明目前的主張。
 
-### Horizontal logic
+### 水平邏輯
 
-Check peer branches for:
+檢查同層分支是否：
 
-- one shared classification dimension;
-- comparable level of abstraction;
-- no overlap;
-- no material omission within the declared scope;
-- a useful order: causal, temporal, priority, or decision sequence.
+- 使用同一分類維度；
+- 位於相近抽象層次；
+- 互不重疊；
+- 在宣告範圍內沒有重大遺漏；
+- 採用有意義的因果、時間、優先或決策順序。
 
-### Six-step problem solving
+### 六步驟問題解決
 
-1. **Define** the problem, constraints, success criteria, and time horizon.
-2. **Decompose** it into a logic tree, causal tree, or workstreams.
-3. **Prioritize** controllable, high-impact, evidence-accessible levers.
-4. **Plan** owners, inputs, tasks, outputs, completion conditions, and risks.
-5. **Analyze** quantitative and qualitative evidence, including failure cases.
-6. **Synthesize** findings into an appropriately qualified recommendation.
+1. **定義**問題、限制、成功標準與時間範圍。
+2. **拆解**成邏輯樹、因果樹或工作流。
+3. **排序**可控制、高影響且能取得證據的槓桿。
+4. **規劃**負責人、輸入、任務、產出、完成條件與風險。
+5. **分析**量化與質化證據，包含失敗案例。
+6. **綜合**發現，提出證據強度相符的建議。
 
-## 3. Evidence discipline
+## 3. 證據紀律
 
-Use these labels when the source material is incomplete:
+來源資料不足時使用以下標籤：
 
-| Label | Meaning |
+| 標籤 | 意義 |
 |---|---|
-| Fact | Directly stated or observed in the supplied material. |
-| Inference | Reasoned interpretation; show the bridge. |
-| Assumption | Needed for planning but not verified. |
-| Recommendation | Proposed action, not a result. |
-| Hypothesis | Testable claim awaiting validation. |
-| Proposed method | Future design, not completed implementation. |
-| `?` / `待確認` | Material detail unavailable or unverified. |
+| 事實 | 來源直接陳述或可直接觀察。 |
+| 推論 | 根據證據進行的解釋；必須說明推論橋接。 |
+| 假設 | 規劃所需但尚未驗證。 |
+| 建議 | 擬採取的行動，不是已完成結果。 |
+| 研究假設 | 可驗證但尚待測試的主張。 |
+| 規劃中的方法 | 未來設計，不是已完成實作。 |
+| `?`／`待確認` | 重要細節不存在或尚未驗證。 |
 
-For academic content, never turn an offline proxy into a human study, a
-proposed experiment into completed evidence, or a single metric into a general
-superiority claim.
+學術內容不得把離線代理指標描述成人類研究、把規劃中的實驗描述成已完成證據，或用單一指標宣稱全面優越。
 
-## 4. Standard generation procedure
+## 4. 標準產生流程
 
-### Step A — decision envelope
+### 步驟 A：決策資訊
 
-Write a small header:
+先建立簡短表頭：
 
 ```yaml
 audience: "..."
 artifact: "slides | proposal | memo | paper-idea | chapter-section"
 decision_or_action: "..."
-evidence_boundary: "what is supplied and what is not"
+evidence_boundary: "已提供與未提供的資料"
 constraints: "..."
 ```
 
-### Step B — Resolution first
+### 步驟 B：先寫核心主張
 
-Write one sentence containing the action or claim, its scope, and its evidence
-qualification. A strong Resolution is specific enough to be challenged.
+使用一句話說明行動或主張、適用範圍與證據限制。好的核心主張應具體到可以被質疑或驗證。
 
-### Step C — SCQR opening
+### 步驟 C：建立 SCQR
 
-Use four short paragraphs or bullets. Keep Situation shared and brief;
-Complication should explain why action is needed now; Question should create the
-decision; Resolution should match the pyramid top.
+使用四個短段落或項目。Situation 應簡短且為共同背景；Complication 說明現在為何必須行動；Question 建立決策；Resolution 必須與金字塔頂端一致。
 
-### Step D — pyramid and evidence map
+### 步驟 D：建立金字塔與證據對照
 
-Choose 2–4 branches. For each branch, include:
+選擇 2～4 個分支。每個分支包含：
 
 ```text
-claim → evidence → implication → limitation
+主張 → 證據 → 含義 → 限制
 ```
 
-Keep field, method, metric, baseline, resource cost, and user evaluation as
-separate dimensions when the topic is technical or academic.
+技術或學術主題應分開處理欄位、方法、指標、基線、資源成本與使用者評估。
 
-### Step E — audits
+### 步驟 E：執行稽核
 
-Report the audit explicitly:
+明確回報：
 
 ```text
-Vertical: pass / partial / fail — why
-Horizontal: pass / partial / fail — why
-Open gaps: ...
+垂直邏輯：通過／部分通過／未通過——原因
+水平邏輯：通過／部分通過／未通過——原因
+未解缺口：...
 ```
 
-### Step F — next actions
+### 步驟 F：提出下一步
 
-End with 1–5 actions in priority order. Each action should have an output and a
-completion condition. Do not hide a major unknown inside an action verb.
+依優先順序列出 1～5 項行動。每項行動都應包含預期產出與完成條件，不得將重大未知項目藏在模糊動詞中。
 
-## 5. Artifact routing
+## 5. 產出類型路由
 
-| Need | Shape |
+| 需求 | 建議形狀 |
 |---|---|
-| Fast update or email | SCR + one recommendation + next action |
-| Presentation | SCQR opening + pyramid slide map + evidence/risks |
-| Proposal | Resolution + options/criteria + workstreams + decision ask |
-| Research idea | Problem + gap + hypothesis + method + evidence boundary |
-| Thesis section | Claim hierarchy + citation slots + logic audit + caveats |
-
+| 快速回報或 Email | SCR＋一項建議＋下一步 |
+| 簡報 | SCQR 開場＋金字塔頁面地圖＋證據與風險 |
+| 提案 | 核心建議＋選項／評估準則＋工作流＋決策請求 |
+| 研究發想 | 問題＋缺口＋假設＋方法＋證據邊界 |
+| 論文章節 | 主張階層＋引用位置＋邏輯稽核＋限制 |

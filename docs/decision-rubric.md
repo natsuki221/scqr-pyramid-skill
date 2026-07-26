@@ -1,31 +1,24 @@
-# Quality rubric
+# 品質評分規準
 
-Score each dimension 0, 1, or 2:
+每個面向評為 0、1 或 2 分：
 
-| Dimension | 0 | 1 | 2 |
+| 面向 | 0 分 | 1 分 | 2 分 |
 |---|---|---|---|
-| Resolution | absent or vague | present but broad | specific and decision-ready |
-| SCQR | missing or out of order | mostly present | creates a clear argument |
-| Pyramid | flat list | some grouping | branches support the top claim |
-| MECE | overlap and gaps | minor issues | peer-level and scope-complete |
-| Evidence | invented or unmapped | partial mapping | every material claim mapped or marked unknown |
-| Logic | unsupported | mixed | vertical and horizontal audits are explicit |
-| Restraint | overclaims | caveats incomplete | confidence matches evidence |
-| Actionability | no next step | generic next step | prioritized actions with completion conditions |
+| 解決方案 | 缺少或模糊 | 已提出但過於寬泛 | 具體且可直接決策 |
+| SCQR | 缺漏或順序錯誤 | 大致完整 | 形成清楚的論證 |
+| 金字塔 | 僅有平面清單 | 有部分分組 | 各分支共同支持頂層主張 |
+| MECE | 重疊且有缺口 | 有少量問題 | 同層、互斥且在範圍內完整 |
+| 證據 | 虛構或未對應 | 僅部分對應 | 每個重要主張都有證據，或明確標示未知 |
+| 邏輯 | 缺少支持 | 品質不一 | 明確完成垂直與水平稽核 |
+| 克制 | 過度主張 | 限制說明不完整 | 確定程度符合證據強度 |
+| 可行動性 | 沒有下一步 | 下一步過於籠統 | 有優先順序與完成條件 |
 
-An acceptance-ready output should score at least 12/16 and must not score 0 on
-Evidence or Restraint.
+可通過驗收的產出應至少獲得 12／16 分，且「證據」與「克制」不得為 0 分。
 
-## Common failure modes
+## 常見失敗模式
 
-- **Solution-first dumping**: starts with implementation details before showing
-  the problem or decision.
-- **Three-point superstition**: forces exactly three branches even when the
-  decision has two or four material dimensions.
-- **Mixed-level buckets**: combines a metric, a technology, and a stakeholder
-  complaint as peers.
-- **Evidence laundering**: uses popularity, one benchmark, or an anecdote as
-  proof of a broader claim.
-- **Academic overclaiming**: calls a planned study completed or treats an
-  offline proxy as participant evidence.
-
+- **解法傾倒**：尚未說明問題或決策，就直接列出實作細節。
+- **三點迷思**：即使決策只有兩個或四個重要面向，仍強迫拆成三點。
+- **層級混雜**：把指標、技術和利害關係人的抱怨當成同層分類。
+- **證據漂白**：用熱門程度、單一基準測試或軼事證明更廣泛的主張。
+- **學術過度主張**：把規劃中的研究說成已完成，或把離線代理指標當成人類參與者證據。

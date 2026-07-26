@@ -1,4 +1,4 @@
-"""Small dependency-free acceptance validator for repository structure."""
+"""不依賴第三方套件的 repository 結構與繁體中文內容驗收器。"""
 
 from pathlib import Path
 
@@ -26,31 +26,31 @@ REQUIRED_TERMS = {
     "core/SCQR_PYRAMID.md": [
         "SCR",
         "SCQR",
-        "Pyramid Principle",
+        "金字塔原理",
         "MECE",
-        "Vertical logic",
-        "Horizontal logic",
-        "Six-step problem solving",
-        "evidence",
+        "垂直邏輯",
+        "水平邏輯",
+        "六步驟問題解決",
+        "證據",
     ],
-    "README.md": ["Codex", "Claude Code", "Gemini", "MIT"],
+    "README.md": ["繁體中文", "Codex", "Claude Code", "Gemini", "MIT"],
+    "tests/acceptance-cases.yaml": ["language: zh-TW", "待確認"],
 }
 
 
 def main() -> None:
     missing = [path for path in REQUIRED_FILES if not (ROOT / path).is_file()]
     if missing:
-        raise SystemExit(f"missing required files: {missing}")
+        raise SystemExit(f"缺少必要檔案：{missing}")
 
     for path, terms in REQUIRED_TERMS.items():
         text = (ROOT / path).read_text(encoding="utf-8")
         absent = [term for term in terms if term not in text]
         if absent:
-            raise SystemExit(f"{path} missing terms: {absent}")
+            raise SystemExit(f"{path} 缺少必要詞彙：{absent}")
 
-    print(f"OK: {len(REQUIRED_FILES)} required files and all core terms present")
+    print(f"通過：{len(REQUIRED_FILES)} 個必要檔案與繁體中文核心詞彙均存在")
 
 
 if __name__ == "__main__":
     main()
-
