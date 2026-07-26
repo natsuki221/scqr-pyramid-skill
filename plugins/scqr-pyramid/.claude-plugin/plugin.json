@@ -1,0 +1,12 @@
+{
+  "name": "scqr-pyramid",
+  "description": "SCQR + 金字塔原理 skill，用於建立可供決策的簡報大綱、提案與結構化問題解決。",
+  "version": "1.0.0",
+  "author": {
+    "name": "natsuki221",
+    "url": "https://github.com/natsuki221"
+  },
+  "homepage": "https://github.com/natsuki221/scqr-pyramid-skill",
+  "repository": "https://github.com/natsuki221/scqr-pyramid-skill",
+  "license": "MIT"
+}

@@ -1,0 +1,18 @@
+{
+  "name": "scqr-pyramid",
+  "owner": {
+    "name": "natsuki221",
+    "url": "https://github.com/natsuki221"
+  },
+  "plugins": [
+    {
+      "name": "scqr-pyramid",
+      "source": "./plugins/scqr-pyramid",
+      "description": "使用 SCR、SCQR、金字塔原理、MECE、邏輯稽核與六步驟問題解決，建立可供決策的簡報大綱、提案與研究發想。",
+      "version": "1.0.0",
+      "author": {
+        "name": "natsuki221"
+      }
+    }
+  ]
+}
