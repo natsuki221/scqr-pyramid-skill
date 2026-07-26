@@ -46,6 +46,20 @@ AI 應依序輸出：
 
 各代理的呼叫方式請參閱 [`agents/README.md`](agents/README.md)。
 
+### 安裝為 Claude Code Plugin
+
+本 repository 同時也是一個自帶的 [plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces)。
+`plugins/scqr-pyramid/` 目錄將同一份 skill（核心規格＋模板）封裝成獨立的 Claude Code
+plugin，不需要 clone 整個 repository 即可安裝：
+
+```shell
+/plugin marketplace add natsuki221/scqr-pyramid-skill
+/plugin install scqr-pyramid@scqr-pyramid
+/reload-plugins
+```
+
+安裝完成後以 `/scqr-pyramid:scqr-pyramid` 呼叫。
+
 ## Repository 結構
 
 ```text
