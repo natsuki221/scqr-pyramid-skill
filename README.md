@@ -55,6 +55,21 @@ The repository keeps one shared core and thin adapters:
 See [`agents/README.md`](agents/README.md) for invocation examples and the
 boundary between shared rules and agent-specific behavior.
 
+### Install as a Claude Code plugin
+
+This repository is also a self-hosting [plugin marketplace](https://code.claude.com/docs/en/plugin-marketplaces).
+The `plugins/scqr-pyramid/` directory packages the same skill (core spec +
+templates) as a standalone Claude Code plugin, so it can be installed without
+cloning the whole repo into your project:
+
+```shell
+/plugin marketplace add natsuki221/scqr-pyramid-skill
+/plugin install scqr-pyramid@scqr-pyramid
+/reload-plugins
+```
+
+Then invoke it with `/scqr-pyramid:scqr-pyramid`.
+
 ## Repository map
 
 ```text
@@ -90,4 +105,3 @@ boundary between shared rules and agent-specific behavior.
 ## License
 
 MIT. See [`LICENSE`](LICENSE).
-
