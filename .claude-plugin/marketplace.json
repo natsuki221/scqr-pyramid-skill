@@ -1,5 +1,6 @@
 {
-  "name": "scqr-pyramid",
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+    "name": "natsuki221-skills",
   "owner": {
     "name": "natsuki221",
     "url": "https://github.com/natsuki221"
