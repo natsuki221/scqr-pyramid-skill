@@ -54,7 +54,7 @@ plugin，不需要 clone 整個 repository 即可安裝：
 
 ```shell
 /plugin marketplace add natsuki221/scqr-pyramid-skill
-/plugin install scqr-pyramid@scqr-pyramid
+/plugin install scqr-pyramid@natsuki221-skills
 /reload-plugins
 ```
 
