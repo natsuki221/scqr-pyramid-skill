@@ -64,7 +64,7 @@ cloning the whole repo into your project:
 
 ```shell
 /plugin marketplace add natsuki221/scqr-pyramid-skill
-/plugin install scqr-pyramid@scqr-pyramid
+/plugin install scqr-pyramid@natsuki221-skills
 /reload-plugins
 ```
 
